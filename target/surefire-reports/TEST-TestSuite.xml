@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="59.28" tests="4" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Venkat\Work\workspace\river-automation\target\test-classes;C:\Venkat\Work\workspace\river-automation\target\classes;C:\Users\venka\.m2\repository\io\cucumber\cucumber-java\7.2.3\cucumber-java-7.2.3.jar;C:\Users\venka\.m2\repository\io\cucumber\cucumber-core\7.2.3\cucumber-core-7.2.3.jar;C:\Users\venka\.m2\repository\io\cucumber\cucumber-gherkin\7.2.3\cucumber-gherkin-7.2.3.jar;C:\Users\venka\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.2.3\cucumber-gherkin-messages-7.2.3.jar;C:\Users\venka\.m2\repository\io\cucumber\messages\17.1.1\messages-17.1.1.jar;C:\Users\venka\.m2\repository\io\cucumber\tag-expressions\4.1.0\tag-expressions-4.1.0.jar;C:\Users\venka\.m2\repository\io\cucumber\cucumber-expressions\15.0.1\cucumber-expressions-15.0.1.jar;C:\Users\venka\.m2\repository\io\cucumber\datatable\7.2.3\datatable-7.2.3.jar;C:\Users\venka\.m2\repository\io\cucumber\cucumber-plugin\7.2.3\cucumber-plugin-7.2.3.jar;C:\Users\venka\.m2\repository\io\cucumber\docstring\7.2.3\docstring-7.2.3.jar;C:\Users\venka\.m2\repository\io\cucumber\html-formatter\17.0.0\html-formatter-17.0.0.jar;C:\Users\venka\.m2\repository\io\cucumber\ci-environment\8.1.0\ci-environment-8.1.0.jar;C:\Users\venka\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\venka\.m2\repository\io\cucumber\cucumber-junit\7.2.3\cucumber-junit-7.2.3.jar;C:\Users\venka\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\venka\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\venka\.m2\repository\io\cucumber\cucumber-testng\7.2.3\cucumber-testng-7.2.3.jar;C:\Users\venka\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\venka\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\venka\.m2\repository\org\junit\vintage\junit-vintage-engine\5.8.2\junit-vintage-engine-5.8.2.jar;C:\Users\venka\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\venka\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\venka\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\venka\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\venka\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\venka\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\venka\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\venka\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\venka\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\venka\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\venka\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\venka\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\venka\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\venka\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\venka\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\venka\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\venka\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\venka\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\venka\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\venka\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\venka\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\venka\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\venka\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\venka\.m2\repository\org\junit\jupiter\junit-jupiter\5.5.1\junit-jupiter-5.5.1.jar;C:\Users\venka\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.5.1\junit-jupiter-api-5.5.1.jar;C:\Users\venka\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.5.1\junit-jupiter-params-5.5.1.jar;C:\Users\venka\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.5.1\junit-jupiter-engine-5.5.1.jar;C:\Users\venka\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\venka\.m2\repository\org\apache\logging\log4j\log4j-api\2.3\log4j-api-2.3.jar;C:\Users\venka\.m2\repository\org\apache\logging\log4j\log4j-core\2.3\log4j-core-2.3.jar;C:\Users\venka\.m2\repository\org\seleniumhq\selenium\selenium-server\3.8.1\selenium-server-3.8.1.jar;C:\Users\venka\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Users\venka\.m2\repository\org\apache\commons\commons-lang3\3.7\commons-lang3-3.7.jar;C:\Users\venka\.m2\repository\org\apache\commons\commons-text\1.1\commons-text-1.1.jar;C:\Users\venka\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\venka\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\venka\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\venka\.m2\repository\commons-net\commons-net\3.6\commons-net-3.6.jar;C:\Users\venka\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar;C:\Users\venka\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.24\cssparser-0.9.24.jar;C:\Users\venka\.m2\repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;C:\Users\venka\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.28\htmlunit-2.28.jar;C:\Users\venka\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.28\htmlunit-core-js-2.28.jar;C:\Users\venka\.m2\repository\net\sourceforge\htmlunit\neko-htmlunit\2.28\neko-htmlunit-2.28.jar;C:\Users\venka\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\venka\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\venka\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\venka\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\venka\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.4.7.v20170914\jetty-repacked-9.4.7.v20170914.jar;C:\Users\venka\.m2\repository\org\eclipse\jetty\jetty-client\9.4.7.v20170914\jetty-client-9.4.7.v20170914.jar;C:\Users\venka\.m2\repository\org\eclipse\jetty\jetty-http\9.4.7.v20170914\jetty-http-9.4.7.v20170914.jar;C:\Users\venka\.m2\repository\org\eclipse\jetty\jetty-io\9.4.7.v20170914\jetty-io-9.4.7.v20170914.jar;C:\Users\venka\.m2\repository\org\eclipse\jetty\jetty-util\9.4.7.v20170914\jetty-util-9.4.7.v20170914.jar;C:\Users\venka\.m2\repository\org\eclipse\jetty\jetty-xml\9.4.7.v20170914\jetty-xml-9.4.7.v20170914.jar;C:\Users\venka\.m2\repository\org\seleniumhq\selenium\htmlunit-driver\2.28\htmlunit-driver-2.28.jar;C:\Users\venka\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\venka\.m2\repository\org\eclipse\jetty\websocket\websocket-api\9.4.7.v20170914\websocket-api-9.4.7.v20170914.jar;C:\Users\venka\.m2\repository\org\eclipse\jetty\websocket\websocket-client\9.4.7.v20170914\websocket-client-9.4.7.v20170914.jar;C:\Users\venka\.m2\repository\org\eclipse\jetty\websocket\websocket-common\9.4.7.v20170914\websocket-common-9.4.7.v20170914.jar;C:\Users\venka\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\venka\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\venka\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar;C:\Users\venka\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\venka\.m2\repository\org\yaml\snakeyaml\1.15\snakeyaml-1.15.jar;C:\Users\venka\.m2\repository\org\jasypt\jasypt\1.9.2\jasypt-1.9.2.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Venkat\Install\sts-4.24.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\venka\AppData\Local\Temp\surefire4978129117960492843\surefirebooter4886289922168750587.jar C:\Users\venka\AppData\Local\Temp\surefire4978129117960492843 2024-09-11T13-15-36_271-jvmRun1 surefire8289136700709726195tmp surefire_07625129466986446350tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Venkat\Work\workspace\river-automation\target\test-classes;C:\Venkat\Work\workspace\river-automation\target\classes;C:\Users\venka\.m2\repository\io\cucumber\cucumber-java\7.2.3\cucumber-java-7.2.3.jar;C:\Users\venka\.m2\repository\io\cucumber\cucumber-core\7.2.3\cucumber-core-7.2.3.jar;C:\Users\venka\.m2\repository\io\cucumber\cucumber-gherkin\7.2.3\cucumber-gherkin-7.2.3.jar;C:\Users\venka\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.2.3\cucumber-gherkin-messages-7.2.3.jar;C:\Users\venka\.m2\repository\io\cucumber\messages\17.1.1\messages-17.1.1.jar;C:\Users\venka\.m2\repository\io\cucumber\tag-expressions\4.1.0\tag-expressions-4.1.0.jar;C:\Users\venka\.m2\repository\io\cucumber\cucumber-expressions\15.0.1\cucumber-expressions-15.0.1.jar;C:\Users\venka\.m2\repository\io\cucumber\datatable\7.2.3\datatable-7.2.3.jar;C:\Users\venka\.m2\repository\io\cucumber\cucumber-plugin\7.2.3\cucumber-plugin-7.2.3.jar;C:\Users\venka\.m2\repository\io\cucumber\docstring\7.2.3\docstring-7.2.3.jar;C:\Users\venka\.m2\repository\io\cucumber\html-formatter\17.0.0\html-formatter-17.0.0.jar;C:\Users\venka\.m2\repository\io\cucumber\ci-environment\8.1.0\ci-environment-8.1.0.jar;C:\Users\venka\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\venka\.m2\repository\io\cucumber\cucumber-junit\7.2.3\cucumber-junit-7.2.3.jar;C:\Users\venka\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\venka\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\venka\.m2\repository\io\cucumber\cucumber-testng\7.2.3\cucumber-testng-7.2.3.jar;C:\Users\venka\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\venka\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\venka\.m2\repository\org\junit\vintage\junit-vintage-engine\5.8.2\junit-vintage-engine-5.8.2.jar;C:\Users\venka\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\venka\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\venka\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\venka\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\venka\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\venka\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\venka\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\venka\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\venka\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\venka\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\venka\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\venka\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\venka\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\venka\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\venka\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\venka\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\venka\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\venka\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\venka\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\venka\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\venka\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\venka\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\venka\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\venka\.m2\repository\org\junit\jupiter\junit-jupiter\5.5.1\junit-jupiter-5.5.1.jar;C:\Users\venka\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.5.1\junit-jupiter-api-5.5.1.jar;C:\Users\venka\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.5.1\junit-jupiter-params-5.5.1.jar;C:\Users\venka\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.5.1\junit-jupiter-engine-5.5.1.jar;C:\Users\venka\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\venka\.m2\repository\org\apache\logging\log4j\log4j-api\2.3\log4j-api-2.3.jar;C:\Users\venka\.m2\repository\org\apache\logging\log4j\log4j-core\2.3\log4j-core-2.3.jar;C:\Users\venka\.m2\repository\org\seleniumhq\selenium\selenium-server\3.8.1\selenium-server-3.8.1.jar;C:\Users\venka\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Users\venka\.m2\repository\org\apache\commons\commons-lang3\3.7\commons-lang3-3.7.jar;C:\Users\venka\.m2\repository\org\apache\commons\commons-text\1.1\commons-text-1.1.jar;C:\Users\venka\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\venka\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\venka\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\venka\.m2\repository\commons-net\commons-net\3.6\commons-net-3.6.jar;C:\Users\venka\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar;C:\Users\venka\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.24\cssparser-0.9.24.jar;C:\Users\venka\.m2\repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;C:\Users\venka\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.28\htmlunit-2.28.jar;C:\Users\venka\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.28\htmlunit-core-js-2.28.jar;C:\Users\venka\.m2\repository\net\sourceforge\htmlunit\neko-htmlunit\2.28\neko-htmlunit-2.28.jar;C:\Users\venka\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\venka\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\venka\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\venka\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\venka\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.4.7.v20170914\jetty-repacked-9.4.7.v20170914.jar;C:\Users\venka\.m2\repository\org\eclipse\jetty\jetty-client\9.4.7.v20170914\jetty-client-9.4.7.v20170914.jar;C:\Users\venka\.m2\repository\org\eclipse\jetty\jetty-http\9.4.7.v20170914\jetty-http-9.4.7.v20170914.jar;C:\Users\venka\.m2\repository\org\eclipse\jetty\jetty-io\9.4.7.v20170914\jetty-io-9.4.7.v20170914.jar;C:\Users\venka\.m2\repository\org\eclipse\jetty\jetty-util\9.4.7.v20170914\jetty-util-9.4.7.v20170914.jar;C:\Users\venka\.m2\repository\org\eclipse\jetty\jetty-xml\9.4.7.v20170914\jetty-xml-9.4.7.v20170914.jar;C:\Users\venka\.m2\repository\org\seleniumhq\selenium\htmlunit-driver\2.28\htmlunit-driver-2.28.jar;C:\Users\venka\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\venka\.m2\repository\org\eclipse\jetty\websocket\websocket-api\9.4.7.v20170914\websocket-api-9.4.7.v20170914.jar;C:\Users\venka\.m2\repository\org\eclipse\jetty\websocket\websocket-client\9.4.7.v20170914\websocket-client-9.4.7.v20170914.jar;C:\Users\venka\.m2\repository\org\eclipse\jetty\websocket\websocket-common\9.4.7.v20170914\websocket-common-9.4.7.v20170914.jar;C:\Users\venka\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\venka\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\venka\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar;C:\Users\venka\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\venka\.m2\repository\org\yaml\snakeyaml\1.15\snakeyaml-1.15.jar;C:\Users\venka\.m2\repository\org\jasypt\jasypt\1.9.2\jasypt-1.9.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\venka"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="C:\Venkat\Install\sts-4.24.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Venkat\Work\workspace\river-automation"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="resourceXmlPath" value="src/test/resources/runner"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="suiteXmlFileName" value="river-testng.xml"/>
+    <property name="surefire.real.class.path" value="C:\Users\venka\AppData\Local\Temp\surefire4978129117960492843\surefirebooter4886289922168750587.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.3+9-LTS"/>
+    <property name="user.name" value="venka"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.3+9"/>
+    <property name="localRepository" value="C:\Users\venka\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\venka\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.3"/>
+    <property name="user.dir" value="C:\Venkat\Work\workspace\river-automation"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Venkat\Install\sts-4.24.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Venkat\Install\sts-4.24.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin;C:/Venkat/Install/sts-4.24.0.RELEASE//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530/jre/bin/server;C:/Venkat/Install/sts-4.24.0.RELEASE//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Venkat\Install\openjdk-22.0.2\bin;C:\Venkat\Install\apache-maven-3.9.9\bin;C:\Users\venka\AppData\Local\Microsoft\WindowsApps;C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\bin;C:\Venkat\Install\sts-4.24.0.RELEASE;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.3+9-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="runScenario" classname="river.common.RiverConfigTests" time="50.203">
+    <failure message="Element____User_Name_Text_Field_is_not_visible expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Element____User_Name_Text_Field_is_not_visible expected [true] but found [false]
+</failure>
+    <system-out><![CDATA[Suite time ==============>11_Sep_2024_01_15_38_620
+Executing in Chrome Browser
+appName##River
+appName##River##APP1_URL##https://davguylytwn4k.cloudfront.net/signin
+
+@JIRA-Story
+Scenario Outline: Language information is saved so the form can be completed and submitted later # src/test/resources/riverfeatures/Intervieweeform.feature:5
+  Given On Login Screen I logged in to River                                                     # river.steps.LoginSteps.on_Login_Screen_i_logged_in_to_RiverApp()
+      java.lang.AssertionError: Element____User_Name_Text_Field_is_not_visible expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at com.anikasystems.common.reports.CReporter.failureReport(CReporter.java:1288)
+	at seleniumUtilities.GenericMethods.waitForVisibilityOfElement(GenericMethods.java:272)
+	at river.pages.LoginPage.enterUserName(LoginPage.java:86)
+	at river.pages.LoginPage.login(LoginPage.java:63)
+	at river.pages.LoginPage.loginIntoRiverApp(LoginPage.java:54)
+	at river.steps.LoginSteps.on_Login_Screen_i_logged_in_to_RiverApp(LoginSteps.java:15)
+	at ✽.On Login Screen I logged in to River(file:///C:/Venkat/Work/workspace/river-automation/src/test/resources/riverfeatures/Intervieweeform.feature:6)
+
+  And User is on the Declaration for interpreted USCIS interview page                            # river.steps.IntervieweeformSteps.user_is_on_the_declaration_for_interpreted_uscis_interview_page()
+  When the user clicks "Declare an interpreter"                                                  # river.steps.IntervieweeformSteps.the_user_clicks(java.lang.String)
+  Then the user is redirected to the "Personal information" page                                 # river.steps.IntervieweeformSteps.the_user_is_redirected_to_the_page(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[log4j:WARN No appenders could be found for logger (com.anikasystems.common.reports.ConfigFileReadWrite).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Starting ChromeDriver 128.0.6613.137 (fe621c5aa2d6b987e964fb1b5066833da5fb613d-refs/branch-heads/6613@{#1711}) on port 22295
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 22295.
+Sep 11, 2024 1:15:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Sep 11, 2024 1:16:35 PM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable classes or previously augmented instances only (instance class was: class org.openqa.selenium.support.events.EventFiringWebDriver)
+java.lang.NullPointerException: Cannot invoke "java.util.Map.get(Object)" because the return value of "java.util.Map.get(Object)" is null
+	at com.anikasystems.common.reports.CReporter.onFailure(CReporter.java:639)
+	at com.anikasystems.common.reports.CReporter.failureReport(CReporter.java:1287)
+	at seleniumUtilities.GenericMethods.waitForVisibilityOfElement(GenericMethods.java:272)
+	at river.pages.LoginPage.enterUserName(LoginPage.java:86)
+	at river.pages.LoginPage.login(LoginPage.java:63)
+	at river.pages.LoginPage.loginIntoRiverApp(LoginPage.java:54)
+	at river.steps.LoginSteps.on_Login_Screen_i_logged_in_to_RiverApp(LoginSteps.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario" classname="river.common.RiverConfigTests" time="0.048">
+    <failure message="The step &apos;the user is logged in&apos; and 6 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;the user is logged in&quot;)&#10;public void the_user_is_logged_in() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user navigates to the {string} page&quot;)&#10;public void the_user_navigates_to_the_page(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user selects {string}&quot;)&#10;public void the_user_selects(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user reviews the instructions&quot;)&#10;public void the_user_reviews_the_instructions() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user declares an interpreter&quot;)&#10;public void the_user_declares_an_interpreter() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the information entered should be saved to be completed later&quot;)&#10;public void the_information_entered_should_be_saved_to_be_completed_later() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.testng.UndefinedStepException">io.cucumber.testng.UndefinedStepException: 
+The step 'the user is logged in' and 6 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the user is logged in")
+public void the_user_is_logged_in() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user navigates to the {string} page")
+public void the_user_navigates_to_the_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user selects {string}")
+public void the_user_selects(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user reviews the instructions")
+public void the_user_reviews_the_instructions() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user declares an interpreter")
+public void the_user_declares_an_interpreter() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the information entered should be saved to be completed later")
+public void the_information_entered_should_be_saved_to_be_completed_later() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</failure>
+    <system-out><![CDATA[
+Scenario: Save Draft                                                 # src/test/resources/riverfeatures/RiverTestCases.feature:3
+  Given the user is logged in
+  When the user navigates to the 'File a form' page
+  And the user selects 'Declaration for interpreted USCIS interview'
+  And the user reviews the instructions
+  And the user declares an interpreter
+  And the user selects 'preferred language'
+  Then the information entered should be saved to be completed later
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario" classname="river.common.RiverConfigTests" time="0.014">
+    <failure message="The step &apos;the user is logged in&apos; and 4 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;the user is logged in&quot;)&#10;public void the_user_is_logged_in() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user navigates to the {string} page&quot;)&#10;public void the_user_navigates_to_the_page(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user selects {string}&quot;)&#10;public void the_user_selects(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user declares an interpreter with all fields filled&quot;)&#10;public void the_user_declares_an_interpreter_with_all_fields_filled() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the form should be submitted successfully&quot;)&#10;public void the_form_should_be_submitted_successfully() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.testng.UndefinedStepException">io.cucumber.testng.UndefinedStepException: 
+The step 'the user is logged in' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the user is logged in")
+public void the_user_is_logged_in() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user navigates to the {string} page")
+public void the_user_navigates_to_the_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user selects {string}")
+public void the_user_selects(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user declares an interpreter with all fields filled")
+public void the_user_declares_an_interpreter_with_all_fields_filled() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the form should be submitted successfully")
+public void the_form_should_be_submitted_successfully() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</failure>
+    <system-out><![CDATA[
+Scenario: Submit declaration with all fields                         # src/test/resources/riverfeatures/RiverTestCases.feature:12
+  Given the user is logged in
+  When the user navigates to the 'File a form' page
+  And the user selects 'Declaration for interpreted USCIS interview'
+  And the user declares an interpreter with all fields filled
+  Then the form should be submitted successfully
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario" classname="river.common.RiverConfigTests" time="0.011">
+    <failure message="The driver executable does not exist: C:\Venkat\Work\workspace\river-automation\path\to\chromedriver" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable does not exist: C:\Venkat\Work\workspace\river-automation\path\to\chromedriver
+</failure>
+    <system-out><![CDATA[
+@JIRA-Feature @JIRA-Story
+Scenario: Verify that the homepage loads correctly # src/test/resources/riverfeatures/homepage.feature:23
+  Given I navigate to the homepage                 # river.steps.HomePageSteps.iNavigateToTheHomepage()
+      java.lang.IllegalStateException: The driver executable does not exist: C:\Venkat\Work\workspace\river-automation\path\to\chromedriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at river.steps.HomePageSteps.iNavigateToTheHomepage(HomePageSteps.java:20)
+	at ✽.I navigate to the homepage(file:///C:/Venkat/Work/workspace/river-automation/src/test/resources/riverfeatures/homepage.feature:24)
+
+  Then I should see the website logo               # river.steps.HomePageSteps.iShouldSeeTheWebsiteLogo()
+  And I should see the main heading                # river.steps.HomePageSteps.iShouldSeeTheMainHeading()
+]]></system-out>
+  </testcase>
+</testsuite>

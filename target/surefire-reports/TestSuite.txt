@@ -1,0 +1,79 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 59.28 s <<< FAILURE! - in TestSuite
+runScenario(river.common.RiverConfigTests)  Time elapsed: 50.203 s  <<< FAILURE!
+java.lang.AssertionError: Element____User_Name_Text_Field_is_not_visible expected [true] but found [false]
+
+runScenario(river.common.RiverConfigTests)  Time elapsed: 0.048 s  <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step 'the user is logged in' and 6 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the user is logged in")
+public void the_user_is_logged_in() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user navigates to the {string} page")
+public void the_user_navigates_to_the_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user selects {string}")
+public void the_user_selects(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user reviews the instructions")
+public void the_user_reviews_the_instructions() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user declares an interpreter")
+public void the_user_declares_an_interpreter() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the information entered should be saved to be completed later")
+public void the_information_entered_should_be_saved_to_be_completed_later() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+runScenario(river.common.RiverConfigTests)  Time elapsed: 0.014 s  <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step 'the user is logged in' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the user is logged in")
+public void the_user_is_logged_in() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user navigates to the {string} page")
+public void the_user_navigates_to_the_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user selects {string}")
+public void the_user_selects(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user declares an interpreter with all fields filled")
+public void the_user_declares_an_interpreter_with_all_fields_filled() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the form should be submitted successfully")
+public void the_form_should_be_submitted_successfully() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+runScenario(river.common.RiverConfigTests)  Time elapsed: 0.011 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable does not exist: C:\Venkat\Work\workspace\river-automation\path\to\chromedriver
+
