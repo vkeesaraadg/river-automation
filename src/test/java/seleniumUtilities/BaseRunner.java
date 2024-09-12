@@ -34,6 +34,7 @@ import com.anikasystems.common.reports.ConfigFileReadWrite;
 import com.anikasystems.common.reports.ReporterConstants;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 /**
  * Driver Script/Base Runner to load/close the configurations before/after each test Run and also configurations to execute in different browsers
@@ -131,7 +132,7 @@ public class BaseRunner extends AbstractTestNGCucumberTests{
 		switch (browser) {
 		case "firefox":
 			System.out.println("Executing in firefox Browser");
-			 String downloadPath = System.getProperty("user.dir")+"\\resources\\common\\testData";
+			String downloadPath = System.getProperty("user.dir")+"\\resources\\common\\testData";
 			DesiredCapabilities ffcapabilities = new DesiredCapabilities().firefox();
 			 FirefoxProfile profile = new FirefoxProfile();
 			 profile.setAcceptUntrustedCertificates(true);
@@ -163,7 +164,9 @@ public class BaseRunner extends AbstractTestNGCucumberTests{
 		      
 		        ffcapabilities.setCapability(FirefoxDriver.PROFILE, profile);
 		        //capabilities.setCapability(CapabilityType.PROXY, proxy);
-			System.setProperty("webdriver.gecko.driver", "Drivers\\geckodriver.exe");
+			//System.setProperty("webdriver.gecko.driver", "Drivers\\geckodriver.exe");
+			 WebDriverManager.firefoxdriver().setup();
+
 			  WebDriver = new FirefoxDriver(ffcapabilities);
 			WebDriver.manage().window().maximize();
 			Thread.sleep(5000);
@@ -182,13 +185,17 @@ public class BaseRunner extends AbstractTestNGCucumberTests{
 			capab.setCapability("requireWindowFocus", true);
 			capab.setCapability("extractpath", iefileDownload);
 			capab.setCapability("enablePersistentHover", false);
-			System.setProperty("webdriver.ie.driver", file.getAbsolutePath());
+			//System.setProperty("webdriver.ie.driver", file.getAbsolutePath());
+			WebDriverManager.iedriver().setup();
+
 			WebDriver = new InternetExplorerDriver(capab);
 			break;
 
 		case "chrome":
 			System.out.println("Executing in Chrome Browser");
-			System.setProperty("webdriver.chrome.driver", "Drivers\\chromedriver.exe");
+			//System.setProperty("webdriver.chrome.driver", "Drivers\\chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
+
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--no-sandbox"); // Bypass OS security model, MUST BE THE VERY FIRST OPTION
@@ -213,7 +220,8 @@ public class BaseRunner extends AbstractTestNGCucumberTests{
 
 		case "edge":
 			System.out.println("Executing in Edge Browser ");
-			System.setProperty("webdriver.edge.driver", "Drivers\\MicrosoftWebDriver.exe");
+			//System.setProperty("webdriver.edge.driver", "Drivers\\MicrosoftWebDriver.exe");
+			WebDriverManager.edgedriver().setup();
 //			WebDriver = new EdgeDriver();
 //			WebDriver.manage().window().maximize();
 			DesiredCapabilities capability = DesiredCapabilities.edge();
@@ -243,7 +251,7 @@ public class BaseRunner extends AbstractTestNGCucumberTests{
 		switch (browser) {
 		case "firefox":
 			System.out.println("Executing in firefox Browser using Grid");
-			System.setProperty("webdriver.gecko.driver", "Drivers\\geckodriver.exe");
+			//System.setProperty("webdriver.gecko.driver", "Drivers\\geckodriver.exe");
 			FirefoxOptions firefoxoptions = new FirefoxOptions();
 			firefoxoptions.addPreference("network.proxy.type", 0);
 			WebDriver = new RemoteWebDriver(new URL(SELENIUM_GRID_URL), firefoxoptions);

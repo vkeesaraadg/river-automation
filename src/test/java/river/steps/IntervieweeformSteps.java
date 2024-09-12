@@ -3,10 +3,11 @@ package river.steps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import river.pages.LoginPage;
+import river.pages.IntervieweeformPage;
 
 public class IntervieweeformSteps {
-
+	IntervieweeformPage intervieweeformPage = new IntervieweeformPage(); 
+	
 	@Given("User is on the Declaration for interpreted USCIS interview page") 
 	public void user_is_on_the_declaration_for_interpreted_uscis_interview_page() throws Throwable {
 		

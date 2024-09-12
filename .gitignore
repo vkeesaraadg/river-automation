@@ -6,3 +6,4 @@ results/**
 /reports/cucumberreports/river
 /reports/cucumberreports/river
 /test-output
+/target/

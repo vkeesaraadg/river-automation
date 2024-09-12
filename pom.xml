@@ -16,18 +16,18 @@
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>7.2.3</version>
+			<version>7.12.1</version>
 		</dependency>
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-junit</artifactId>
-			<version>7.2.3</version>
+			<version>7.12.1</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-testng</artifactId>
-			<version>7.2.3</version>
+			<version>7.12.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.junit.vintage</groupId>
@@ -39,11 +39,19 @@
 			<artifactId>selenium-java</artifactId>
 			<version>3.141.59</version>
 		</dependency>
+
+		<!-- WebDriverManager (optional) -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.8.0</version> <!-- Check for the latest version -->
+		</dependency>
+
 		<!-- <dependency>
             <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-commons</artifactId>
+		<artifactId>junit-platform-commons</artifactId>
             <version>1.5.2</version>
- 		</dependency>-->
+		</dependency>-->
 		<!--<dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-launcher</artifactId>
