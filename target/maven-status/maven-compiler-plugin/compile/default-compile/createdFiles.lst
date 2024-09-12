@@ -1,8 +1,0 @@
-com\anikasystems\common\reports\CReporter.class
-com\anikasystems\common\support\DecryptData.class
-com\anikasystems\common\support\ConfiguratorSupport.class
-com\anikasystems\common\reports\ReporterConstants.class
-com\anikasystems\common\support\EncryptData.class
-com\anikasystems\common\reports\ConfigFileReadWrite.class
-com\anikasystems\common\reports\TestResult.class
-com\anikasystems\common\reports\BrowserContext.class

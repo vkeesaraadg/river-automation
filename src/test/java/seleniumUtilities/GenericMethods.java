@@ -667,9 +667,11 @@ public class GenericMethods extends BaseRunner {
 		try {
 			LOG.info("Class name : " + getCallerClassName() + "Method name : " + getCallerMethodName());
 			LOG.info("Method : Type  ::  Locator : " + locatorName + " :: Data :" + testData);
-			WebDriverWait wait = new WebDriverWait(driver, 15);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-			LOG.info("Locator is Visible :: " + locator);
+			
+			 WebDriverWait wait = new WebDriverWait(driver, 15);
+			 wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+			 LOG.info("Locator is Visible :: " + locator);
+			 
 			driver.findElement(locator).clear();
 			LOG.info("Cleared the existing Locator data : ");
 			driver.findElement(locator).sendKeys(testData);

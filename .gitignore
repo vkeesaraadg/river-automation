@@ -1,0 +1,7 @@
+reports/**
+target/**
+results/**
+/reports/cucumberreports/river
+/reports/cucumberreports
+/reports/cucumberreports/river
+/reports/cucumberreports/river

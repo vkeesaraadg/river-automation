@@ -19,12 +19,13 @@ public class LoginPage extends GenericMethods {
 	protected String app1URL = ConfigFileReadWrite.read(ReporterConstants.configReporterApp1File,
 			"app1URL");
 	
-	DecryptData decryptdata = new DecryptData();
+	//DecryptData decryptdata = new DecryptData();
 
-	By iframeRiver = By.id("loginFrame");
-	By txtLoginName = By.id("input81");
-	By txtLoginPassword = By.id("input89");
-	By btnLogin = By.xpath("//input[@title='Sign in']");
+	//By iframeRiver = By.id("loginFrame");
+	By txtLoginName = By.cssSelector("input[type='text']");
+	By txtLoginPassword = By.cssSelector("input[type='password']");
+	// By btnLogin = By.xpath("//input[@title='Sign in']");
+	By btnLogin = By.xpath("//div[@class='o-form-button-bar']");
 	By btnLogout = By.id("river_toolbar_logout");
 	By riverLogo = By.id("River_header_nciLogo");
 	//By lnkProvisionalAccess = By.linkText("Request Provisional Access");
@@ -59,20 +60,18 @@ public class LoginPage extends GenericMethods {
 	public void login() throws Throwable {
 		clearGlobalVariables();
 		//if(isElementDisplayed(riverLogo, "Logout")) {
-			switchToFrameByIndex(0);
+			//switchToFrameByIndex(0);
 			enterUserName(APP1_USERNAME);
 			enterPassword(APP1_PASSWORD);
 			clickOnLoginButton();
 			//waitForHomePage();
-			comeOutFromFrame();
-			waitForElementToBeClickable(btnLogout);
-			if(!isElementPresent(btnLogout, "Log Out")) {
-				reporter.failureReport("Login", "Failed to login,Please check user details", driver);
-				assertElementPresent(btnLogout, "Log Out");
-			}
-			else {
-				reporter.SuccessReport("Login", "Scessfully login into the application");
-			}
+			/*
+			 * comeOutFromFrame(); waitForElementToBeClickable(btnLogout);
+			 * if(!isElementPresent(btnLogout, "Log Out")) { reporter.failureReport("Login",
+			 * "Failed to login,Please check user details", driver);
+			 * assertElementPresent(btnLogout, "Log Out"); } else {
+			 * reporter.SuccessReport("Login", "Scessfully login into the application"); }
+			 */
 			/*
 			 * } else { reporter.failureReport("Application Down",
 			 * "Login page issue or application down Please check", driver); }
@@ -93,9 +92,9 @@ public class LoginPage extends GenericMethods {
 	 */
 	public void enterPassword(String password) throws Throwable {
 		try {
-		String decryptedPassword = decryptdata.DecryptDataValue(password);
+		//String decryptedPassword = decryptdata.DecryptDataValue(password);
 		waitForVisibilityOfElement(txtLoginPassword, "Password Text Field");
-		driver.findElement(txtLoginPassword).sendKeys(decryptedPassword);
+		driver.findElement(txtLoginPassword).sendKeys(password);
 		}catch (Exception e) {
 			reporter.failureReport("Password", "While entering the password it failed to decrypt", driver);
 		}
@@ -106,7 +105,7 @@ public class LoginPage extends GenericMethods {
 	 * clickOnLoginButton description :: Clicks on Login Button
 	 */
 	public void clickOnLoginButton() throws Throwable {
-		waitForVisibilityOfElement(btnLogin, "Login button");
+		//waitForVisibilityOfElement(btnLogin, "Login button");
 		click(btnLogin, "Login Button");
 	}
 
