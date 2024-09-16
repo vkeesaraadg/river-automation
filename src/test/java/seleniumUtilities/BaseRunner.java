@@ -97,7 +97,7 @@ public class BaseRunner extends AbstractTestNGCucumberTests{
 			  
 			  
 		  }
-		  Thread.sleep(5000);
+		  Thread.sleep(50);
 		  reporter.calculateSuiteStartTime();
     }
 	
@@ -169,11 +169,11 @@ public class BaseRunner extends AbstractTestNGCucumberTests{
 
 			  WebDriver = new FirefoxDriver(ffcapabilities);
 			WebDriver.manage().window().maximize();
-			Thread.sleep(5000);
+			Thread.sleep(50);
 			break;
 			
 		case "ie":
-			Thread.sleep(10000);
+			Thread.sleep(100);
 			System.out.println("Executing in IE Browser");
 			String iefileDownload = System.getProperty("user.dir")+"\\resources\\common\\testdata";
 			DesiredCapabilities capab = DesiredCapabilities.internetExplorer();
@@ -256,11 +256,11 @@ public class BaseRunner extends AbstractTestNGCucumberTests{
 			firefoxoptions.addPreference("network.proxy.type", 0);
 			WebDriver = new RemoteWebDriver(new URL(SELENIUM_GRID_URL), firefoxoptions);
 			WebDriver.manage().window().maximize();
-			Thread.sleep(5000);
+			Thread.sleep(50);
 			break;
 			
 		case "ie":
-			Thread.sleep(10000);
+			Thread.sleep(100);
 			System.out.println("Executing in IE Browser using Grid");
 			InternetExplorerOptions ieCap = new InternetExplorerOptions();
 			File file = new File("Drivers\\IEDriverServer.exe");

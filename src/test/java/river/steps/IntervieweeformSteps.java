@@ -3,26 +3,46 @@ package river.steps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import river.pages.IntervieweeformPage;
+import river.pages.IntervieweeFormPage;
 
-public class IntervieweeformSteps {
-	IntervieweeformPage intervieweeformPage = new IntervieweeformPage(); 
-	
-	@Given("User is on the Declaration for interpreted USCIS interview page") 
-	public void user_is_on_the_declaration_for_interpreted_uscis_interview_page() throws Throwable {
-		
+public class IntervieweeFormSteps {
+
+	private IntervieweeFormPage intervieweeFormPage;
+
+	// Constructor
+	public IntervieweeFormSteps() {
+
+		this.intervieweeFormPage = new IntervieweeFormPage();
 	}
 
-	@When("the user clicks {string}")
-	public void the_user_clicks(String string) throws Throwable {
-		// Write code here that turns the phrase above into concrete actions
-		//throw new io.cucumber.java.PendingException();
+	@Given("I open the {string} form")
+	public void iOpenTheForm(String formLabel) throws Throwable {
+		intervieweeFormPage.openForm(formLabel);
 	}
 
-	@Then("the user is redirected to the {string} page") 
-	public void the_user_is_redirected_to_the_page(String string) throws Throwable {
-		// Write code here that turns the phrase above into concrete actions
-		//throw new io.cucumber.java.PendingException();
+	@When("I start the form")
+	public void iStartTheForm() throws Throwable {
+		intervieweeFormPage.startForm();
+	}
+
+	@When("I click the {string} button")
+	public void iClickTheButton(String buttonText) throws Throwable {
+		intervieweeFormPage.clickButton(buttonText);
+	}
+
+	@Then("I scroll to the top of the page")
+	public void iScrollToTheTopOfThePage() throws Throwable {
+		intervieweeFormPage.scrollToTop();
+	}
+
+	@Then("I enter {string} into the Alien Registration Number field")
+	public void iEnterIntoTheAlienRegistrationNumberField(String registrationNumber) throws Throwable {
+		intervieweeFormPage.enterAlienRegistrationNumber(registrationNumber);
+	}
+
+	@Then("I select {string} from the Language combo box")
+	public void iSelectFromTheLanguageComboBox(String language) throws Throwable {
+		intervieweeFormPage.selectLanguage(language);
 	}
 
 }

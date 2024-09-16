@@ -41,7 +41,7 @@ public class LoginPage extends GenericMethods {
 		if(isElementDisplayed(btnLogout, "Logout")) {
 			clickLogout();
 			driver.manage().deleteAllCookies();
-			Thread.sleep(2000);
+			Thread.sleep(20);
 			driver.navigate().refresh();
 			login();
 		}
@@ -130,7 +130,7 @@ public class LoginPage extends GenericMethods {
 		if(isElementDisplayed(btnLogout, "Logout")) {
 			clickLogout();
 			driver.manage().deleteAllCookies();
-			Thread.sleep(2000);
+			Thread.sleep(20);
 			driver.navigate().refresh();
 			loginWithRole(role);
 		}
